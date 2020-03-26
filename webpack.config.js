@@ -1,6 +1,7 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
  
 const conf = {
    entry: './src/index.js',
@@ -20,14 +21,22 @@ const conf = {
                 loader: 'babel-loader',
                 exclude: '/node_modules/'
             },
-            // Правило для инлайнового добавления стилей
-            // {
-            //     test: /\.css$/,
-            //     use: [
-            //         'style-loader',
-            //         'css-loader'
-            //     ]
-            // },
+            {
+                // images / icons
+                test: /\.(png|jpg|gif|svg)$/,
+                loader: "file-loader",
+                options: {
+                  name: "[name].[ext]"
+                }
+              },
+            {
+                // Fonts
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]'
+                }
+              }, 
             {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
@@ -40,7 +49,11 @@ const conf = {
         new ExtractTextPlugin("styles.css"),
         new HtmlWebpackPlugin({
             template: './src/index.html'
-        })
+        }),
+        new CopyWebpackPlugin([
+            { from: `./src/img`, to: `img` },
+            { from: `./src/fonts`, to: `fonts` }
+          ])
     ]
 }
  
