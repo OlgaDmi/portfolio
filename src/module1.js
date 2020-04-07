@@ -1,11 +1,21 @@
-const privateFunc = () => {
-    console.log('Вызов приватной функции модуля');
- }
   
- const publicFunc = (name) => {
-    privateFunc();
-    console.log('Вызов публичной функции из модуля');
-    console.log(`Привет, ${name}!`);
+ const menuOpen = () => {
+    const menuBtn = document.querySelector('#menu');
+
+    if (menuBtn != null) {
+      menuBtn.addEventListener('click', function() {
+         const menuList = document.querySelector('.projects__menu-list');
+         let displayList = menuList.style.display;
+   
+         if (displayList == 'block') {
+            menuList.style.display = 'none';
+         } else {
+            menuList.style.display = 'block';
+         }
+       })
+    }
  }
-  
- export default publicFunc;
+ 
+ export {
+   menuOpen
+};

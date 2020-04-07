@@ -9,9 +9,9 @@ html, body {
     height: 100%;
     margin: 0;
 }
-.menu {
-    max-width: 1920px;
-    height: 100%;
+.menu, .projects {
+    max-width: inherit;
+    height: inherit;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@ html, body {
     margin: auto;
 }
 
-.menu__text_middle-gray {
+.menu__text_middle-gray, .projects__text_middle-gray {
     color: rgb(131, 126, 123);
 }
 
@@ -64,17 +64,171 @@ html, body {
     background-color:  rgb(51, 51, 51);
 }
 
-.menu__content_light-gray {
+.menu__content_light-gray, .projects__description_light-gray, .projects__scroll_light-gray {
     background-color: lightgray;
 }
 
-.menu__content_middle-gray {
+.menu__content_middle-gray, .projects__main_middle-gray, .projects__scroll_middle-gray {
     background-color: rgb(131, 126, 123);
 }
 
 .menu__content_pattern {
     background: url(/dist/img/pattern.jpg);
 }
+
 .menu__icon{
     width: 7%;
+}
+
+.projects__description, .projects__view {
+    width: 50%;
+    height: auto;
+    font-family: "PressStart2P-Regular";
+}
+
+.projects__top, .about__top {
+    width: 100%;
+    display: flex;
+}
+
+.projects__top div:nth-child(2) {
+    padding: 0 5%;
+}
+
+.projects__menu-item {
+    margin: 0;
+}
+
+.projects__description-icon {
+    width: 10%;
+}
+
+.projects__bottom {
+    padding: 10%;
+}
+
+.projects__text {
+    text-align: center;
+    line-height: 55px;
+}
+
+.projects__menu, .projects__trans {
+    cursor: pointer;
+    transition: opacity 1s;
+}
+
+.projects__menu:hover, .projects__trans:hover {
+    opacity: 0.2;
+}
+
+.projects__menu-list {
+    border: 1px solid rgb(131, 126, 123);
+    background: #D3D3D3;
+    position: absolute;
+    top: 40px;
+    left: 16%;
+    z-index: 5;
+    width: 200px;
+    overflow: hidden;
+}
+
+.projects__menu-item {
+    transition: background 1s;
+    cursor: pointer;
+    padding: 5% 2%;
+}
+
+.projects__menu-item:hover {
+    background: rgb(131, 126, 123);
+}
+
+.projects__h1 {
+    font-size: 52px;
+}
+
+.projects__text-min {
+    padding-bottom: 5%;
+}
+
+.projects__btn {
+    font-family: "PressStart2P-Regular";
+    cursor: pointer;
+    padding: 3%;
+    text-decoration: none;
+    background-color: inherit;
+    text-transform: uppercase;
+    border: 2px solid rgb(131, 126, 123);
+    transition: color 1s;
+}
+
+.projects__btn:hover {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+.projects__view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects__main {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+}
+
+.projects__scroll {
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.projects__scroll-back {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects__main-icon img, .projects__main-icon source {
+    width: 90%;
+    height: auto;
+}
+
+.project__overlay {
+    opacity: 0.6;
+    z-index: 2;
+    overflow: hidden;
+    background: rgba(0,0,0,0.4);
+    transition: opacity 1s;
+    cursor: pointer;
+    height: 100%;
+}
+
+.project__overlay:hover {
+    opacity: 0.2;
+}
+
+@media (max-width : 1700px) {
+    .menu__text_big {
+        font-size: 80px;
+    }
+}
+
+@media (max-width : 1600px) {
+    .projects__description, .projects__view {
+        width: 100%;
+    }
+}
+
+@media (max-width : 1200px) {
+    .menu__item {
+        width: 100%;
+    }
+}
+
+@media (max-width : 600px) {
+    .menu__text_big {
+        font-size: 50px;
+    }
 }
