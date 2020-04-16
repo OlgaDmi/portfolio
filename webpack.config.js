@@ -28,7 +28,11 @@ const conf = {
                 options: {
                   name: "[name].[ext]"
                 }
-              },
+            },
+            {
+              test: /\.json$/,
+              loader: 'json-loader'
+            },
             {
                 // Fonts
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -42,7 +46,11 @@ const conf = {
                 use: ExtractTextPlugin.extract({
                   use: "css-loader"
                 })
-            }
+              }, 
+                {
+                  test: /\.hbs/,
+                  loader: 'handlebars-loader'
+              }
         ]
     },
     plugins: [
@@ -51,9 +59,10 @@ const conf = {
             template: './src/index.html'
         }),
         new CopyWebpackPlugin([
-            { from: `./src/img`, to: `img` },
-            { from: `./src/fonts`, to: `fonts` }
-          ])
+          { from: `./src/img`, to: `img` },
+          { from: `./src/fonts`, to: `fonts` },
+          { from: `./src/data`, to: `data` }
+        ])
     ]
 }
  

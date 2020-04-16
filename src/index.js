@@ -1,6 +1,13 @@
+
 import './css/style.css';
 import {
-    menuOpen
+    loadProjects,
+    menuOpen,
+    menuClick,
+    templateGenerate
 } from './module1';
 
 menuOpen();
+menuClick();
+
+//  loadProjects('contacts').then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick());

@@ -1,0 +1,105 @@
+{
+  "about": 
+    {
+      "description-icon": "icon-1",
+      "project-h": "Обо мне",
+      "other-project1": "Мои проекты",
+      "other-project2": "Контакты",
+      "project-name": "Обо мне",
+      "project-text": "Более 3 лет занимаюсь разработкой и поддержкой сайтов. Постоянно  развиваюсь в своей сфере и применяю новые технологии в работе",
+      "project-skills": [
+        "Html5, css3",
+        "Javascript",
+        "Php",
+        "Sass/Less",
+        "Git",
+        "Webpack/Gulp",
+        "Bitrix",
+        "Английский язык (intermediate) на уровне поддержания переписки и чтения технической литературы"
+      ],
+      "project-image-big-1": "cert_Bitrix_admin",
+      "project-image-next-min-1": "cert_Bitrix_content_manager_min",
+      "project-image-before-min-1": "cert_OS_en_min",
+      "project-image-big-2": "cert_Bitrix_content_manager",
+      "project-image-next-min-2": "cert_loftschool_JS_en_min",
+      "project-image-before-min-2": "cert_Bitrix_admin_min",
+      "project-image-big-3": "cert_loftschool_JS_en",
+      "project-image-next-min-3": "cert_OS_en_min",
+      "project-image-before-min-3": "cert_loftschool_JS_en_min",
+      "project-image-big-4": "cert_OS_en",
+      "project-image-next-min-4": "cert_Bitrix_admin",
+      "project-image-before-min-4": "cert_loftschool_JS_en_min"
+    },
+    "contacts": 
+      {
+        "description-icon": "icon-1",
+        "project-h": "Контакты",
+        "other-project1": "Мои проекты",
+        "other-project2": "Обо мне",
+        "project-name": "Мои Контакты",
+        "project-text": "Вы можете связаться со мной любым из представленных ниже способов:",
+        "phone": {
+          "text": "8 (953) 172 - 90 - 37",
+          "href": "+79531729037"
+        },
+        "e-mail": "OlgaDmi1992@mail.ru",
+        "vk": {
+          "text": "Страницу Вконтакте",
+          "href": "https://vk.com/olgadmi1992"
+        }
+      },
+      "project1": 
+        {
+          "description-icon": "icon-2",
+          "project-h": "Мои проекты",
+          "other-project1": "Обо мне",
+          "other-project2": "Контакты",
+          "project-name": "Беспредметье",
+          "project-text": "Интерактивная страница с использованием JavaScript.",
+          "project-image-big-1": "project_bezpredmet",
+          "project-image-next-min-1": "project_telematika_min",
+          "project-image-before-min-1": "project_map_min",
+          "project-site-href": "http://telemachus.ru/bespedmetie/"
+        },
+        "project2": 
+        {
+          "description-icon": "icon-2",
+          "project-h": "Мои проекты",
+          "other-project1": "Обо мне",
+          "other-project2": "Контакты",
+          "project-name": "Создание сайта",
+          "project-text": "Разработка многостраничного сайта на Битрикс с использованием Php и Javascript.",
+          "project-image-big-1": "project_telematika",
+          "project-image-next-min-1": "project_waxom_min",
+          "project-image-before-min-1": "project_bezpredmet_min",
+          "project-site-href": "https://lat-telematika.ru/"
+        },
+        "project3": 
+        {
+          "description-icon": "icon-2",
+          "project-h": "Мои проекты",
+          "other-project1": "Обо мне",
+          "other-project2": "Контакты",
+          "project-name": "Верстка landing page",
+          "project-text": "Верстка страницы с использованием html5, css3 и Bootstrap.",
+          "project-image-big-1": "project_waxom",
+          "project-image-next-min-1": "project_map_min",
+          "project-image-before-min-1": "project_telematika_min",
+          "project-site-href": "https://olgadmi.github.io/waxom/",
+          "project-git-href": "https://github.com/OlgaDmi/waxom/tree/develop"
+        },
+        "project4": 
+        {
+          "description-icon": "icon-2",
+          "project-h": "Мои проекты",
+          "other-project1": "Обо мне",
+          "other-project2": "Контакты",
+          "project-name": "Интерактивная карта",
+          "project-text": "Создание интерактивной карты с использованием Яндекс API и Javascript.",
+          "project-image-big-1": "project_map",
+          "project-image-next-min-1": "project_bezpredmet_min",
+          "project-image-before-min-1": "project_waxom_min",
+          "project-site-href": "https://olgadmi.github.io/map/",
+          "project-git-href": "https://github.com/OlgaDmi/map"
+        }   
+}

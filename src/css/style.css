@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "PressStart2P-Regular";
     src: url('/fonts/PressStart2P-Regular.ttf')  format('truetype')
@@ -39,12 +38,12 @@ html, body {
     text-transform: uppercase;
 }
 
-.menu__text_min {
+.menu__text_min span {
     font-size: 20px;
     cursor: pointer;
 }
 
-.menu__text_min:hover {
+.menu__text_min:hover span {
     opacity: 0.7;
 }
 
@@ -92,7 +91,7 @@ html, body {
 }
 
 .projects__top div:nth-child(2) {
-    padding: 0 5%;
+    padding: 0 2%;
 }
 
 .projects__menu-item {
@@ -112,12 +111,17 @@ html, body {
     line-height: 55px;
 }
 
-.projects__menu, .projects__trans {
+.projects__list {
+    list-style: none;
+    text-align: left;
+}
+
+.projects__menu{
     cursor: pointer;
     transition: opacity 1s;
 }
 
-.projects__menu:hover, .projects__trans:hover {
+.projects__menu:hover{
     opacity: 0.2;
 }
 
@@ -161,8 +165,14 @@ html, body {
     transition: color 1s;
 }
 
+.projects__btn a, .projects__list a {
+    text-decoration: none;
+}
+
 .projects__btn:hover {
     background-color: rgb(51, 51, 51);
+}
+.projects__btn:hover a, .projects__list li a:hover{
     color: white;
 }
 
@@ -219,16 +229,31 @@ html, body {
     .projects__description, .projects__view {
         width: 100%;
     }
+    .projects__menu-list {
+        left: 27%;
+    }
 }
 
 @media (max-width : 1200px) {
     .menu__item {
         width: 100%;
     }
+    .projects__menu-list {
+        left: 30%;
+    }
+}
+
+@media (max-width : 1000px) {
+    .projects__menu-list {
+        left: 30%;
+    }
 }
 
 @media (max-width : 600px) {
     .menu__text_big {
         font-size: 50px;
+    }
+    .projects__menu-list {
+        left: 37%;
     }
 }
