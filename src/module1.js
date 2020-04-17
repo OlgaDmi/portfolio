@@ -36,12 +36,34 @@ const menuOpen = () => {
    }
 }
 
-const sliderChange = (section) => {
+const sliderChange = (sectionMain, section) => {
    let projectsScrollUp = document.querySelector('.projects__scroll_up'),
    projectsScrollDown = document.querySelector('.projects__scroll_down');
 
    if (projectsScrollUp && projectsScrollDown) {
-      console.log(section);
+      projectsScrollUp.addEventListener('click', () => {
+         let num = parseInt(section.replace(/[^\d]/g, ''));
+
+         if (num < 4) {
+            let sectionNext = sectionMain + ++num;
+            loadProjects(sectionNext).then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick()).then(() => sliderChange(sectionMain, sectionNext));
+         } else {
+            let sectionNext = sectionMain + 1;
+            loadProjects(sectionNext).then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick()).then(() => sliderChange(sectionMain, sectionNext));
+         }
+      });
+
+      projectsScrollDown.addEventListener('click', () => {
+         let num = parseInt(section.replace(/[^\d]/g, ''));
+
+         if (num != 1) {
+            let sectionNext = sectionMain + --num;
+            loadProjects(sectionNext).then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick()).then(() => sliderChange(sectionMain, sectionNext));
+         } else {
+            let sectionNext = sectionMain + (num + 3);
+            loadProjects(sectionNext).then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick()).then(() => sliderChange(sectionMain, sectionNext));
+         }
+      });
    }
 }
 
@@ -49,7 +71,7 @@ const menuClick = () => {
    const body = document.querySelector('body');
 
    if (body) {
-      body.addEventListener('click', function(event) {
+      body.addEventListener('click', (event) => {
          let bigMenu = document.querySelector('#menuPage'),
          projectsBlock = document.querySelector('#projects');
 
@@ -60,7 +82,7 @@ const menuClick = () => {
             if (projectsBlock) {
                projectsBlock.style.display = 'flex';
             }
-            loadProjects('project1').then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick()).then(() => sliderChange('project1'));
+            loadProjects('project1').then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick()).then(() => sliderChange('project','project1'));
          } else if (event.target.innerText == 'Обо мне' && classSearch(event.target.className)) {
             if (bigMenu) {
                bigMenu.style.display = 'none';
@@ -68,7 +90,7 @@ const menuClick = () => {
             if (projectsBlock) {
                projectsBlock.style.display = 'flex';
             }
-            loadProjects('about').then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick()).then(() => sliderChange('about'));
+            loadProjects('about1').then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick()).then(() => sliderChange('about','about1'));
          } else if (event.target.innerText == 'Контакты' && classSearch(event.target.className)) {
             if (bigMenu) {
                bigMenu.style.display = 'none';
