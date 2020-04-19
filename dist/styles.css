@@ -1,6 +1,6 @@
 @font-face {
     font-family: "PressStart2P-Regular";
-    src: url('/fonts/PressStart2P-Regular.ttf')  format('truetype')
+    src: url('portfolio/dist/fonts/PressStart2P-Regular.ttf')  format('truetype')
 }
 
 html, body {
@@ -72,7 +72,7 @@ html, body {
 }
 
 .menu__content_pattern {
-    background: url(/dist/img/pattern.jpg);
+    background: url(/portfolio/dist/img/pattern.jpg);
 }
 
 .menu__icon{
