@@ -254,6 +254,9 @@ html, body {
     .menu__text_min span {
         font-size: 14px;
     }
+    .projects__list {
+        font-size: 13px;
+    }
 }
 
 @media (max-width : 600px) {
@@ -263,5 +266,11 @@ html, body {
     }
     .menu__text_big {
         font-size: 50px;
+    }
+    .projects__list {
+        font-size: 10px;
+    }
+    .projects__text {
+        line-height: 35px;
     }
 }
