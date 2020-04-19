@@ -1,0 +1,79 @@
+        {{#if project-h}}
+        <div class="projects__description projects__description_light-gray">
+            <div class="projects__top">
+                <picture class="projects__description-icon">
+                    <source srcset="/dist/img/{{description-icon}}.svg" type="image/svg+xml">
+                    <img src="/dist/img/{{description-icon}}.png" alt="{{project-h}}">
+                </picture>
+               <div>{{project-h}}</div>
+               <div class="projects__menu" id="menuTop">Меню</div>
+               <div class="projects__menu-list" style="display: none;">
+                   <p class="projects__menu-item menu__target">{{other-project1}}</p>
+                   <p class="projects__menu-item menu__target">{{other-project2}}</p>
+                   <p class="projects__menu-item menu__target">Главное меню</p>
+               </div>
+            </div>
+            
+            <div class="projects__bottom projects__text">
+                <h1 class="projects__h1 projects__text_middle-gray">{{project-name}}</h1>
+                <div class="projects__text-min projects__text_middle-gray">{{project-text}}</div>
+                {{#if project-skills}}
+                <div class="projects__text-min projects__text_middle-gray">Ключевые навыки:</div>
+                <ul class="projects__list projects__text_middle-gray">
+                    {{#each project-skills}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+                {{#if phone}}
+                <ul class="projects__list">
+                {{#with phone}}    
+                <li>Тел: <a href="tel:{{href}}" class="projects__text_middle-gray">{{text}}</a></li>
+                {{/with}}
+                <li>E-mail: <a href="mailto:{{e-mail}}" class="projects__text_middle-gray">{{e-mail}}</a></li>
+                {{#with vk}}
+                <li>Vk: <a href="{{href}}" target="_blank" class="projects__text_middle-gray">{{text}}</a></li>
+                {{/with}}
+                {{#with linkedin}}
+                <li>Linkedin: <a href="{{href}}" target="_blank" class="projects__text_middle-gray">{{text}}</a></li>
+                {{/with}}
+                {{#with github}}
+                <li>Github: <a href="{{href}}" target="_blank" class="projects__text_middle-gray">{{text}}</a></li>
+                {{/with}}
+                </ul>
+                {{/if}}
+                {{#if project-site-href}}
+                <button class="projects__btn"><a href="{{project-site-href}}" target="_blank" class="projects__text_middle-gray">Перейти на сайт</a></button>
+                {{/if}}
+                {{#if project-git-href}}
+                <button class="projects__btn projects__text_middle-gray"><a href="{{project-git-href}}" target="_blank" class="projects__text_middle-gray">Перейти на Github</a></button>
+                {{/if}}
+            </div>
+        </div>
+        {{#if project-image-big}}
+        <div class="projects__view">
+            <div class="projects__main projects__main_middle-gray">
+                <picture class="projects__main-icon">
+                    <source srcset="/dist/img/{{project-image-big}}.webp" type="webp">
+                    <img src="/dist/img/{{project-image-big}}.png" alt="Проект">
+                </picture> 
+            </div>
+            <div class="projects__scroll projects__scroll_middle-gray projects__scroll-back projects__scroll_down" style="background-image: url(/distimg/{{project-image-next-min}}.png);">
+                <div class="project__overlay">
+                    <picture class="project__overlay-icon">
+                        <source srcset="/dist/img/icon-4.svg" type="image/svg+xml">
+                        <img src="/dist/img/icon-4.png" alt="Стрелка вниз">
+                    </picture>
+                </div>
+            </div>
+            <div class="projects__scroll projects__scroll_light-gray projects__scroll-back projects__scroll_up" style="background-image: url(/distimg/{{project-image-before-min}}.png);">
+                <div class="project__overlay">
+                    <picture class="project__overlay-icon">
+                        <source srcset="/dist/img/icon-5.svg" type="image/svg+xml">
+                        <img src="/dist/img/icon-5.png" alt="Стрелка вверх">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        {{/if}}
+        {{/if}}
