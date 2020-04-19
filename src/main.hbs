@@ -5,8 +5,10 @@
                     <source srcset="img/{{description-icon}}.svg" type="image/svg+xml">
                     <img src="img/{{description-icon}}.png" alt="{{project-h}}">
                 </picture>
-               <div><p>{{project-h}}</p></div>
-               <div><p class="projects__menu" id="menuTop">Меню</p></div>
+               {{!-- <div><p>{{project-h}}</p></div>
+               <div><p class="projects__menu" id="menuTop">Меню</p></div> --}}
+               <div>{{project-h}}</div>
+               <div class="projects__menu" id="menuTop">Меню</div>
                <div class="projects__menu-list" style="display: none;">
                    <p class="projects__menu-item menu__target">{{other-project1}}</p>
                    <p class="projects__menu-item menu__target">{{other-project2}}</p>
@@ -31,13 +33,22 @@
                 <li>Тел: <a href="tel:{{href}}" class="projects__text_middle-gray">{{text}}</a></li>
                 {{/with}}
                 <li>E-mail: <a href="mailto:{{e-mail}}" class="projects__text_middle-gray">{{e-mail}}</a></li>
+                {{#with vk}}
+                <li>Vk: <a href="{{href}}" target="_blank" class="projects__text_middle-gray">{{text}}</a></li>
+                {{/with}}
+                {{#with linkedin}}
+                <li>Linkedin: <a href="{{href}}" target="_blank" class="projects__text_middle-gray">{{text}}</a></li>
+                {{/with}}
+                {{#with github}}
+                <li>Github: <a href="{{href}}" target="_blank" class="projects__text_middle-gray">{{text}}</a></li>
+                {{/with}}
                 </ul>
                 {{/if}}
                 {{#if project-site-href}}
-                <button class="projects__btn"><a href="{{project-site-href}}" class="projects__text_middle-gray">Перейти на сайт</a></button>
+                <button class="projects__btn"><a href="{{project-site-href}}" target="_blank" class="projects__text_middle-gray">Перейти на сайт</a></button>
                 {{/if}}
                 {{#if project-git-href}}
-                <button class="projects__btn projects__text_middle-gray"><a href="{{project-git-href}}" class="projects__text_middle-gray">Перейти на Github</a></button>
+                <button class="projects__btn projects__text_middle-gray"><a href="{{project-git-href}}" target="_blank" class="projects__text_middle-gray">Перейти на Github</a></button>
                 {{/if}}
             </div>
         </div>

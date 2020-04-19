@@ -77,6 +77,7 @@ html, body {
 
 .menu__icon{
     width: 7%;
+    cursor: pointer;
 }
 
 .projects__description, .projects__view {
@@ -90,8 +91,8 @@ html, body {
     display: flex;
 }
 
-.projects__top div:nth-child(2) {
-    padding: 0 2%;
+.projects__top div:nth-child(2), .projects__top div:nth-child(3) {
+    margin: 25px;
 }
 
 .projects__menu-item {
@@ -99,7 +100,7 @@ html, body {
 }
 
 .projects__description-icon {
-    width: 10%;
+    width: 100px;
 }
 
 .projects__bottom {
@@ -121,7 +122,7 @@ html, body {
     transition: opacity 1s;
 }
 
-.projects__menu:hover{
+.projects__menu:hover, .menu__icon:hover{
     opacity: 0.2;
 }
 
@@ -129,8 +130,8 @@ html, body {
     border: 1px solid rgb(131, 126, 123);
     background: #D3D3D3;
     position: absolute;
-    top: 40px;
-    left: 16%;
+    top: 7%;
+    left: 17%;
     z-index: 5;
     width: 200px;
     overflow: hidden;
@@ -231,6 +232,7 @@ html, body {
     }
     .projects__menu-list {
         left: 27%;
+        top: 5%;
     }
 }
 
@@ -255,5 +257,6 @@ html, body {
     }
     .projects__menu-list {
         left: 37%;
+        top: 4%;
     }
 }
