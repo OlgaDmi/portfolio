@@ -1,6 +1,6 @@
 @font-face {
     font-family: "PressStart2P-Regular";
-    src: url('/fonts/PressStart2P-Regular.ttf')  format('truetype')
+    src: url('/dist/fonts/PressStart2P-Regular.ttf')  format('truetype')
 }
 
 html, body {
