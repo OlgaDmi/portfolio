@@ -76,7 +76,7 @@ html, body {
 }
 
 .menu__icon{
-    width: 7%;
+    /* width: 7%; */
     cursor: pointer;
 }
 
@@ -113,7 +113,6 @@ html, body {
 }
 
 .projects__list {
-    list-style: none;
     text-align: left;
 }
 
@@ -249,14 +248,20 @@ html, body {
     .projects__menu-list {
         left: 30%;
     }
+    .projects__h1 {
+        font-size: 22px;
+    }
+    .menu__text_min span {
+        font-size: 14px;
+    }
 }
 
 @media (max-width : 600px) {
+    .projects__menu-list {
+        left: 45%;
+        top: 9%;
+    }
     .menu__text_big {
         font-size: 50px;
-    }
-    .projects__menu-list {
-        left: 37%;
-        top: 4%;
     }
 }
