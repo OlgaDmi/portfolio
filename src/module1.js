@@ -6,10 +6,11 @@ const templateGenerate = (filtrData) => {
     projects.innerHTML = template(filtrData);
 
     if (filtrData['project-h'] == 'Контакты') {
-        const description = document.querySelector('.projects__description');
+        const description = document.querySelector('.projects__description'),
+        projectBlock = document.querySelector('#projects');
       
         description.style.width = '100%';
-        description.style.height = '100%';
+        projectBlock.style.height = 'auto';
     } else if (filtrData['project-h'] == 'Обо мне') {
         const img = document.querySelector('.projects__main-icon img'),
             source = document.querySelector('.projects__main-icon source');
