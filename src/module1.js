@@ -9,6 +9,7 @@ const templateGenerate = (filtrData) => {
         const description = document.querySelector('.projects__description');
       
         description.style.width = '100%';
+        description.style.height = '100%';
     } else if (filtrData['project-h'] == 'Обо мне') {
         const img = document.querySelector('.projects__main-icon img'),
             source = document.querySelector('.projects__main-icon source');

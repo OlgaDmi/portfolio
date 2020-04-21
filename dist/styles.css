@@ -262,8 +262,8 @@ html, body {
 
 @media (max-width : 600px) {
     .projects__menu-list {
-        left: 45%;
-        top: 9%;
+        left: 49%;
+        top: 4%;
     }
     .menu__text_big {
         font-size: 50px;
