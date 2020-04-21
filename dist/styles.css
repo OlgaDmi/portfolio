@@ -227,9 +227,6 @@ html, body {
 }
 
 @media (max-width : 1600px) {
-    .projects__description, .projects__view {
-        width: 100%;
-    }
     .projects__menu-list {
         left: 27%;
         top: 5%;
@@ -237,6 +234,9 @@ html, body {
 }
 
 @media (max-width : 1200px) {
+    .projects__description, .projects__view {
+        width: 100%;
+    }
     .menu__item {
         width: 100%;
     }
