@@ -152,19 +152,5 @@
           "project-image-before-min": "project_map_min",
           "project-site-href": "https://olgadmi.github.io/waxom/",
           "project-git-href": "https://github.com/OlgaDmi/waxom/tree/develop"
-        },
-        "project4": 
-        {
-          "description-icon": "icon-2",
-          "project-h": "Мои проекты",
-          "other-project1": "Обо мне",
-          "other-project2": "Контакты",
-          "project-name": "Интерактивная карта",
-          "project-text": "Создание интерактивной карты с использованием Яндекс API и Javascript.",
-          "project-image-big": "project_map",
-          "project-image-next-min": "project_waxom_min",
-          "project-image-before-min": "project_bezpredmet_min",
-          "project-site-href": "https://olgadmi.github.io/map/",
-          "project-git-href": "https://github.com/OlgaDmi/map"
         }   
 }
