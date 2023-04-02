@@ -1,6 +1,6 @@
 @font-face {
     font-family: "PressStart2P-Regular";
-    src: url('/portfolio/dist/fonts/PressStart2P-Regular.ttf')  format('truetype')
+    src: url('/fonts/PressStart2P-Regular.ttf')  format('truetype')
 }
 
 html, body {
@@ -72,11 +72,11 @@ html, body {
 }
 
 .menu__content_pattern {
-    background: url(/portfolio/dist/img/pattern.jpg);
+    background: url(/dist/img/pattern.jpg);
 }
 
 .menu__icon{
-    /* width: 7%; */
+    width: 7%;
     cursor: pointer;
 }
 
@@ -113,6 +113,7 @@ html, body {
 }
 
 .projects__list {
+    list-style: none;
     text-align: left;
 }
 
@@ -129,8 +130,7 @@ html, body {
     border: 1px solid rgb(131, 126, 123);
     background: #D3D3D3;
     position: absolute;
-    /* top: 7%; */
-    top: 70px;
+    top: 7%;
     left: 17%;
     z-index: 5;
     width: 200px;
@@ -187,6 +187,9 @@ html, body {
     width: 100%;
     height: 70%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects__scroll {
@@ -199,10 +202,11 @@ html, body {
 .projects__scroll-back {
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 50%;
 }
 
 .projects__main-icon img, .projects__main-icon source {
-    width: 90%;
+    width: 60%;
     height: auto;
 }
 
@@ -227,6 +231,9 @@ html, body {
 }
 
 @media (max-width : 1600px) {
+    .projects__description, .projects__view {
+        width: 100%;
+    }
     .projects__menu-list {
         left: 27%;
         top: 5%;
@@ -234,9 +241,6 @@ html, body {
 }
 
 @media (max-width : 1200px) {
-    .projects__description, .projects__view {
-        width: 100%;
-    }
     .menu__item {
         width: 100%;
     }
@@ -249,41 +253,14 @@ html, body {
     .projects__menu-list {
         left: 30%;
     }
-    .projects__h1 {
-        font-size: 22px;
-    }
-    .menu__text_min span {
-        font-size: 14px;
-    }
-    .projects__list {
-        font-size: 13px;
-    }
 }
 
 @media (max-width : 600px) {
-    .projects__menu-list {
-        left: 49%;
-        top: 4%;
-    }
     .menu__text_big {
         font-size: 50px;
     }
-    .projects__list {
-        font-size: 10px;
+    .projects__menu-list {
+        left: 37%;
+        top: 4%;
     }
-    .projects__text {
-        line-height: 35px;
-    }
-}
-
-@media (max-width: 400px) {
-.projects__description, .projects__view {
-    font-size: 10px;
-}
-
-.projects__menu-list {
-    left: 30%;
-    top: 8%;
-}
-
 }
