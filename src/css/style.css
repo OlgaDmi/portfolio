@@ -187,6 +187,9 @@ html, body {
     width: 100%;
     height: 70%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects__scroll {
@@ -199,10 +202,11 @@ html, body {
 .projects__scroll-back {
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 50%;
 }
 
 .projects__main-icon img, .projects__main-icon source {
-    width: 90%;
+    width: 60%;
     height: auto;
 }
 

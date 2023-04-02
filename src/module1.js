@@ -50,25 +50,41 @@ const sliderChange = (sectionMain, section) => {
 
     if (projectsScrollUp && projectsScrollDown) {
         projectsScrollUp.addEventListener('click', () => {
-            let num = parseInt(section.replace(/[^\d]/g, ''));
+            let num = parseInt(section.replace(/[^\d]/g, '')),
+                count = 0,
+                sectionNext = '';
 
-            if (num < 4) {
-                let sectionNext = sectionMain + ++num;
+            if (sectionMain == 'about') {
+                count = 5;
+            } else {
+                count = 6;
+            }
+
+            if (num < count) {
+                sectionNext = sectionMain + ++num;
                 loadProjects(sectionNext).then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick()).then(() => sliderChange(sectionMain, sectionNext));
             } else {
-                let sectionNext = sectionMain + 1;
+                sectionNext = sectionMain + 1;
                 loadProjects(sectionNext).then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick()).then(() => sliderChange(sectionMain, sectionNext));
             }
         });
 
         projectsScrollDown.addEventListener('click', () => {
-            let num = parseInt(section.replace(/[^\d]/g, ''));
+            let num = parseInt(section.replace(/[^\d]/g, '')),
+                count = 0,
+                sectionNext = '';
+
+            if (sectionMain == 'about') {
+                count = 4;
+            } else {
+                count = 5;
+            }
 
             if (num != 1) {
-                let sectionNext = sectionMain + --num;
+                sectionNext = sectionMain + --num;
                 loadProjects(sectionNext).then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick()).then(() => sliderChange(sectionMain, sectionNext));
             } else {
-                let sectionNext = sectionMain + (num + 3);
+                sectionNext = sectionMain + (num + count);
                 loadProjects(sectionNext).then(filtrData => templateGenerate(filtrData)).then(() => menuOpen()).then(() => menuClick()).then(() => sliderChange(sectionMain, sectionNext));
             }
         });

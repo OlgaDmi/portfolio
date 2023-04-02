@@ -6,10 +6,11 @@
       "other-project1": "Мои проекты",
       "other-project2": "Контакты",
       "project-name": "Обо мне",
-      "project-text": "Более 3 лет занимаюсь разработкой и поддержкой сайтов. Постоянно  развиваюсь в своей сфере и применяю новые технологии в работе",
+      "project-text": "Более 5 лет занимаюсь разработкой и поддержкой сайтов. Постоянно  развиваюсь в своей сфере и применяю новые технологии в работе",
       "project-skills": [
         "Html5, css3",
         "Javascript",
+	"Vuejs",
         "Php",
         "Sass/Less",
         "Git",
@@ -19,7 +20,7 @@
       ],
       "project-image-big": "cert_Bitrix_admin",
       "project-image-before-min": "cert_Bitrix_content_manager_min",
-      "project-image-next-min": "cert_OS_en_min"
+      "project-image-next-min": "cert_Loftschool_React_min"
     },
     "about2": 
     {
@@ -28,10 +29,11 @@
       "other-project1": "Мои проекты",
       "other-project2": "Контакты",
       "project-name": "Обо мне",
-      "project-text": "Более 3 лет занимаюсь разработкой и поддержкой сайтов. Постоянно  развиваюсь в своей сфере и применяю новые технологии в работе",
+      "project-text": "Более 5 лет занимаюсь разработкой и поддержкой сайтов. Постоянно  развиваюсь в своей сфере и применяю новые технологии в работе",
       "project-skills": [
         "Html5, css3",
         "Javascript",
+	"Vuejs",
         "Php",
         "Sass/Less",
         "Git",
@@ -50,10 +52,11 @@
       "other-project1": "Мои проекты",
       "other-project2": "Контакты",
       "project-name": "Обо мне",
-      "project-text": "Более 3 лет занимаюсь разработкой и поддержкой сайтов. Постоянно  развиваюсь в своей сфере и применяю новые технологии в работе",
+      "project-text": "Более 5 лет занимаюсь разработкой и поддержкой сайтов. Постоянно  развиваюсь в своей сфере и применяю новые технологии в работе",
       "project-skills": [
         "Html5, css3",
         "Javascript",
+	"Vuejs",
         "Php",
         "Sass/Less",
         "Git",
@@ -63,7 +66,7 @@
       ],
       "project-image-big": "cert_loftschool_JS_en",
       "project-image-before-min": "cert_OS_en_min",
-      "project-image-next-min": "cert_loftschool_JS_en_min"
+      "project-image-next-min": "cert_Bitrix_content_manager_min"
     },
     "about4": 
     {
@@ -72,10 +75,11 @@
       "other-project1": "Мои проекты",
       "other-project2": "Контакты",
       "project-name": "Обо мне",
-      "project-text": "Более 3 лет занимаюсь разработкой и поддержкой сайтов. Постоянно  развиваюсь в своей сфере и применяю новые технологии в работе.",
+      "project-text": "Более 5 лет занимаюсь разработкой и поддержкой сайтов. Постоянно  развиваюсь в своей сфере и применяю новые технологии в работе.",
       "project-skills": [
         "Html5, css3",
         "Javascript",
+	"Vuejs",
         "Php",
         "Sass/Less",
         "Git",
@@ -84,8 +88,31 @@
         "Английский язык (intermediate) на уровне поддержания переписки и чтения технической литературы"
       ],
       "project-image-big": "cert_OS_en",
-      "project-image-before-min": "cert_Bitrix_admin_min",
+      "project-image-before-min": "cert_Loftschool_React_min",
       "project-image-next-min": "cert_loftschool_JS_en_min"
+    },
+    "about5": 
+    {
+      "description-icon": "icon-1",
+      "project-h": "Обо мне",
+      "other-project1": "Мои проекты",
+      "other-project2": "Контакты",
+      "project-name": "Обо мне",
+      "project-text": "Более 5 лет занимаюсь разработкой и поддержкой сайтов. Постоянно  развиваюсь в своей сфере и применяю новые технологии в работе.",
+      "project-skills": [
+        "Html5, css3",
+        "Javascript",
+	"Vuejs",
+        "Php",
+        "Sass/Less",
+        "Git",
+        "Webpack/Gulp",
+        "Bitrix",
+        "Английский язык (intermediate) на уровне поддержания переписки и чтения технической литературы"
+      ],
+      "project-image-big": "cert_Loftschool_React",
+      "project-image-before-min": "cert_Bitrix_admin_min",
+      "project-image-next-min": "cert_OS_en_min"
     },
     "contacts": 
       {
@@ -122,7 +149,7 @@
           "project-name": "Беспредметье",
           "project-text": "Интерактивная страница с использованием JavaScript.",
           "project-image-big": "project_bezpredmet",
-          "project-image-next-min": "project_map_min",
+          "project-image-next-min": "maxi_min",
           "project-image-before-min": "project_telematika_min",
           "project-site-href": "http://telemachus.ru/bespedmetie/"
         },
@@ -146,11 +173,52 @@
           "other-project1": "Обо мне",
           "other-project2": "Контакты",
           "project-name": "Верстка landing page",
-          "project-text": "Верстка страницы с использованием html5, css3 и Bootstrap.",
+          "project-text": "Верстка страницы с использованием html5, scss и js-модулей.",
           "project-image-big": "project_waxom",
           "project-image-next-min": "project_telematika_min",
           "project-image-before-min": "project_map_min",
-          "project-site-href": "https://olgadmi.github.io/waxom/",
-          "project-git-href": "https://github.com/OlgaDmi/waxom/tree/develop"
-        }   
+          "project-site-href": "https://olgadmi.github.io/improvingEducation/",
+          "project-git-href": "https://github.com/OlgaDmi/improvingEducation"
+        },
+        "project4": 
+        {
+          "description-icon": "icon-2",
+          "project-h": "Мои проекты",
+          "other-project1": "Обо мне",
+          "other-project2": "Контакты",
+          "project-name": "Интерактивная карта",
+          "project-text": "Создание интерактивной карты с использованием Яндекс API и Javascript.",
+          "project-image-big": "project_map",
+          "project-image-next-min": "project_waxom_min",
+          "project-image-before-min": "donationForm_min",
+          "project-site-href": "https://olgadmi.github.io/map/",
+          "project-git-href": "https://github.com/OlgaDmi/map"
+        },
+        "project5": 
+        {
+          "description-icon": "icon-2",
+          "project-h": "Мои проекты",
+          "other-project1": "Обо мне",
+          "other-project2": "Контакты",
+          "project-name": "Приложение на Vuejs",
+          "project-text": "Верстка приложения с использованием html5, scss и vuejs 2.",
+          "project-image-big": "donationForm",
+          "project-image-next-min": "project_map_min",
+          "project-image-before-min": "maxi_min",
+          "project-site-href": "https://olgadmi.github.io/donationForm/",
+          "project-git-href": "https://github.com/OlgaDmi/donationForm"
+        },
+        "project6": 
+        {
+          "description-icon": "icon-2",
+          "project-h": "Мои проекты",
+          "other-project1": "Обо мне",
+          "other-project2": "Контакты",
+          "project-name": "Обновление страниц сайта maxidom.ru",
+          "project-text": "Верстка новых страниц (главная, каталог, корзина) с использованием html5, scss и vuejs2.",
+          "project-image-big": "maxi",
+          "project-image-next-min": "donationForm_min",
+          "project-image-before-min": "project_bezpredmet_min",
+          "project-site-href": "https://www.maxidom.ru/"
+        }          
 }
