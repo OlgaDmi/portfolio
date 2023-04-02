@@ -149,7 +149,7 @@ const loadProjects = (object) => {
     return new Promise((resolve, reject) => {
         let xhr = new XMLHttpRequest();
 
-        xhr.open('GET', 'data/data.json');
+        xhr.open('GET', 'dist/data/data.json');
         xhr.responseType = 'json';
 
         xhr.onload = function() {
